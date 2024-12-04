@@ -1,0 +1,42 @@
+
+    {% extends 'usuarios/base.html' %}
+    {% block conteudo %}
+    <form action="{% url 'listagem_usuarios' %}" method="post">
+        {% csrf_token %}
+        <div style="text-align: center;" class="container">
+            <h1>Cadastro de usuários</h1>
+            Nome <input name="nome" class="form-control-sm" type="text">
+            Idade <input name="idade" class="form-control-sm" type="text">
+            <button class="form-control-sm">Enviar</button>
+        </div><br>
+    </form>   
+    <div class="container d-flex" style="gap: 150px;">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/users.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Cadastro usuários</h5>
+            <p class="card-text">Área para cadastro de usuários</p>
+            <a href="#" class="btn btn-primary">Cadastrar usuários</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Cadastro tarefas</h5>
+            <p class="card-text">Área para cadastro de tarefas</p>
+            <a href="#" class="btn btn-primary">Cadastrar tarefa</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Cadastro eventos</h5>
+            <p class="card-text">Área para cadastro de eventos</p>
+            <a href="#" class="btn btn-primary">Cadastrar eventos</a>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

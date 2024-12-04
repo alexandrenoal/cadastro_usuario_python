@@ -1,0 +1,17 @@
+1 - Para iniciar um novo projeto
+django-admin startproject "nome_do_projeto"
+
+2 - para colocar o projeto no ar:
+- acessa a pasta com cd
+- digita "python manage.py runserver" no terminal. (equivalendo ao php artisan serve do laravel)
+
+3 - criar app
+- django-admin startapp "nome do app" (recomendação comoçar com app_)
+
+4 - criar as migrations
+- python .\manage.py makemigrations
+
+e para aplicar no banco
+python .\manage.py migrate
+
+
